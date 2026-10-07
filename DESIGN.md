@@ -1,5 +1,9 @@
 # A3t8al Vault — Technical Design
 
+<p align="center"><img src="assets/logo.svg" alt="A3t8al Vault" width="520"></p>
+
+![System architecture](assets/architecture.png)
+
 ## 1. Scope
 
 A3t8al Vault is a single-file encrypted container for a command-line environment. The primary target is iSH on iPhone, where a small executable can manage private files without presenting the container as a mounted filesystem.

@@ -1,5 +1,9 @@
 # Security Notes
 
+<p align="center"><img src="assets/logo.svg" alt="A3t8al Vault" width="520"></p>
+
+> A visual security boundary: plaintext enters the command, authenticated encryption protects the image, and only a verified password can recover records.
+
 ## Reporting a security issue
 
 Do not publish sensitive details of a suspected vulnerability in a public issue. Contact the project owner through the private project channel and include the release version, operating system, command used, and a minimal reproduction that does not contain private data.

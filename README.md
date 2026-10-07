@@ -1,5 +1,23 @@
 # A3t8al Vault
 
+<p align="center">
+  <img src="assets/logo.svg" alt="A3t8al Vault" width="620">
+</p>
+
+<p align="center">
+  <strong>Private files. One encrypted image. A clean iSH workflow.</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/A3t8al/a3t8al-vault/releases"><img src="https://img.shields.io/badge/release-v0.1.1-5eead4?style=for-the-badge&labelColor=0b1020" alt="Release v0.1.1"></a>
+  <a href="#ish-installation-on-iphone"><img src="https://img.shields.io/badge/target-iSH%20%2F%20iPhone-60a5fa?style=for-the-badge&labelColor=0b1020" alt="Target iSH on iPhone"></a>
+  <a href="#security-model"><img src="https://img.shields.io/badge/encryption-ChaCha20--Poly1305-fbbf24?style=for-the-badge&labelColor=0b1020" alt="ChaCha20-Poly1305"></a>
+</p>
+
+<p align="center">
+  <img src="assets/vault-flow.svg" alt="Animated A3t8al Vault data flow" width="100%">
+</p>
+
 ## Encrypted file container for iPhone, iSH, and Linux
 
 A3t8al Vault is a command-line encrypted container. It stores file names, metadata, and file contents inside one authenticated file named `vault.img`. The image is designed to be unreadable without the vault password and to reject unauthorized modifications.
@@ -7,6 +25,27 @@ A3t8al Vault is a command-line encrypted container. It stores file names, metada
 This distribution is intended for use inside **iSH on iPhone**. It includes a 32-bit Intel executable for iSH and a separate 64-bit Linux executable. The distribution contains executables and documentation only; development source files are not included.
 
 > **Important:** This is a compact educational and personal-use utility. It has not undergone an independent security audit and must not be treated as a replacement for a professionally reviewed encrypted filesystem.
+
+## Architecture at a glance
+
+![A3t8al Vault architecture](assets/architecture.png)
+
+The operating path is deliberately short: iPhone, iSH, the `vault` command, authenticated encryption, and the protected `vault.img` container.
+
+<details>
+<summary><strong>Open the design overview</strong></summary>
+
+```mermaid
+flowchart LR
+    A[iPhone] --> B[iSH Shell]
+    B --> C[vault command]
+    C --> D[PBKDF2-HMAC-SHA256]
+    D --> E[ChaCha20-Poly1305]
+    E --> F[(vault.img)]
+    F --> G[fsck / authenticated read]
+```
+
+</details>
 
 ---
 

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+<title id="title">A3t8al Vault data flow</title>
+<desc id="desc">Animated flow from an iPhone through iSH and authenticated encryption into vault.img.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#17233b"/></linearGradient>
+ <linearGradient id="accent"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#60a5fa"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <style>
+ .label{font:600 18px Inter,Arial,sans-serif;fill:#f8fafc;text-anchor:middle}.small{font:14px Inter,Arial,sans-serif;fill:#a7b3c9;text-anchor:middle}
+ .node{fill:#182235;stroke:#5eead4;stroke-width:2}.pulse{stroke:url(#accent);stroke-width:5;stroke-linecap:round;stroke-dasharray:10 18;animation:move 2.2s linear infinite;filter:url(#glow)}
+ @keyframes move{to{stroke-dashoffset:-112}}
+ </style>
+</defs>
+<rect width="1200" height="280" rx="24" fill="url(#bg)"/>
+<text x="48" y="42" fill="#5eead4" font-family="Inter,Arial" font-size="15" letter-spacing="3">A3T8AL VAULT / DATA FLOW</text>
+<g transform="translate(55 88)"><rect class="node" width="150" height="100" rx="18"/><text class="label" x="75" y="44">iPhone</text><text class="small" x="75" y="70">your device</text></g>
+<g transform="translate(285 88)"><rect class="node" width="150" height="100" rx="18"/><text class="label" x="75" y="44">iSH</text><text class="small" x="75" y="70">Alpine shell</text></g>
+<g transform="translate(515 88)"><rect class="node" width="150" height="100" rx="18"/><text class="label" x="75" y="44">vault</text><text class="small" x="75" y="70">command line</text></g>
+<g transform="translate(745 88)"><rect class="node" width="150" height="100" rx="18"/><text class="label" x="75" y="44">AEAD</text><text class="small" x="75" y="70">encrypt + verify</text></g>
+<g transform="translate(975 88)"><rect class="node" width="170" height="100" rx="18"/><text class="label" x="85" y="44">vault.img</text><text class="small" x="85" y="70">opaque container</text></g>
+<path class="pulse" d="M205 138h80M435 138h80M665 138h80M895 138h80" fill="none"/>
+</svg>

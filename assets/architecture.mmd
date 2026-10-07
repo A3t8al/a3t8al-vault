@@ -1,0 +1,17 @@
+%%{init: {'theme':'base','themeVariables': {'primaryColor':'#182235','primaryTextColor':'#f7f8fb','primaryBorderColor':'#5eead4','lineColor':'#5eead4','secondaryColor':'#101827','tertiaryColor':'#24324a','fontFamily':'Inter,Arial'}}}%%
+flowchart LR
+    A["iPhone"] --> B["iSH Shell"]
+    B --> C["vault command"]
+    C --> D["PBKDF2\nHMAC-SHA256"]
+    D --> E["32-byte key"]
+    E --> F["ChaCha20-Poly1305"]
+    F --> G[("vault.img\nEncrypted Container")]
+    G --> H["fsck\nAuthenticated Read"]
+    style A fill:#0f172a,stroke:#38bdf8,color:#fff
+    style B fill:#182235,stroke:#818cf8,color:#fff
+    style C fill:#182235,stroke:#c084fc,color:#fff
+    style D fill:#24324a,stroke:#5eead4,color:#fff
+    style E fill:#24324a,stroke:#fbbf24,color:#fff
+    style F fill:#24324a,stroke:#fb7185,color:#fff
+    style G fill:#111827,stroke:#5eead4,color:#fff
+    style H fill:#182235,stroke:#34d399,color:#fff
