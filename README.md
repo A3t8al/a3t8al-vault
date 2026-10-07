@@ -1,6 +1,6 @@
 # A3t8al Vault
 
-[![Version](https://img.shields.io/badge/Version-0.1.2-green?style=for-the-badge)](https://github.com/A3t8al/a3t8al-vault/releases)
+[![Version](https://img.shields.io/badge/Version-0.1.3-green?style=for-the-badge)](https://github.com/A3t8al/a3t8al-vault/releases)
 [![Platform](https://img.shields.io/badge/Platform-iSH%20%7C%20Linux-blue?style=for-the-badge)](https://github.com/A3t8al/a3t8al-vault)
 [![Author](https://img.shields.io/badge/Author-A3t8al-red?style=for-the-badge)](https://github.com/A3t8al)
 [![License](https://img.shields.io/badge/Distribution-Binary--only-111827?style=for-the-badge)](https://github.com/A3t8al/a3t8al-vault/releases)
