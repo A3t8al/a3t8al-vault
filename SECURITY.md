@@ -1,5 +1,9 @@
 # Security Notes
 
+[![Version](https://img.shields.io/badge/Version-0.1.2-green?style=for-the-badge)](https://github.com/A3t8al/a3t8al-vault/releases)
+[![Platform](https://img.shields.io/badge/Platform-iSH%20%7C%20Linux-blue?style=for-the-badge)](https://github.com/A3t8al/a3t8al-vault)
+[![Author](https://img.shields.io/badge/Author-A3t8al-red?style=for-the-badge)](https://github.com/A3t8al)
+
 <p align="center"><img src="assets/logo.svg" alt="A3t8al Vault" width="520"></p>
 
 > A visual security boundary: plaintext enters the command, authenticated encryption protects the image, and only a verified password can recover records.
